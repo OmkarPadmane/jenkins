@@ -1,22 +1,22 @@
 pipeline{
-	anent any 
+	agent any 
 	stages{
 		stage('build){
 			steps{
 				echo 'First step'
-				sh who
+				sh 'who'
 			}
 		}
 		stage('test'){
 			steps{
 				echo 'second step'
-				sh pwd
+				sh 'pwd'
 			}
 		}
 		stage('deploy'){
 			steps{
 				echo 'Last step'
-				sh uname
+				sh 'uname'
 			}
 		}
 	}
