@@ -7,7 +7,7 @@ pipeline{
 		stage('build') {
 			steps {
 				echo 'First step'
-				sh | echo "${VALUE}"
+				echo "${VALUE}" | sh 
 			}
 		}
 	}
