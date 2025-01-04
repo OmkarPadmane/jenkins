@@ -6,7 +6,6 @@ pipeline{
 	stages {
 		stage('build') {
 			steps {
-				echo 'First step'
 				echo "${VALUE}" | sh 
 			}
 		}
