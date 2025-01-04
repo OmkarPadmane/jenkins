@@ -1,13 +1,13 @@
 pipeline{
 	agent any 
 	environment {
-		VALUE = who
+		VALUE = 'who'
 	}
 	stages {
 		stage('build') {
 			steps {
 				echo 'First step'
-				sh | echo "$(VALUE)"
+				sh | echo "${VALUE}"
 			}
 		}
 	}
