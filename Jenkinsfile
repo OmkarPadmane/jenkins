@@ -1,20 +1,20 @@
 pipeline{
 	agent any 
-	stages{
-		stage('build){
-			steps{
+	stages {
+		stage('build) {
+			steps {
 				echo 'First step'
 				sh 'who'
 			}
 		}
-		stage('test'){
-			steps{
+		stage('test') {
+			steps {
 				echo 'second step'
 				sh 'pwd'
 			}
 		}
-		stage('deploy'){
-			steps{
+		stage('deploy') {
+			steps {
 				echo 'Last step'
 				sh 'uname'
 			}
